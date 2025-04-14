@@ -47,7 +47,7 @@ class WBAuthTrayApp(rumps.App):
         config_paths = []
         home = str(Path.home())
         xdg_config_home = os.environ.get('XDG_CONFIG_HOME')
-        if not xdg_config_home:
+        if xdg_config_home == None or xdg_config_home == '':
             xdg_config_home = os.path.join(home, '.config')
         filenames = ['wbauth.yaml', 'wbauth.yml']
         dirs = [xdg_config_home, os.path.join(xdg_config_home, 'wbauth'), home]
