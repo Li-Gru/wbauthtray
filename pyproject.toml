@@ -1,10 +1,10 @@
 [project]
 name = "wbauth"
 version = "0.0.1"
-requires-python = "==3.12.9"
+requires-python = "==3.13.2"
 dependencies = [
-    "desktop_notifier>=6.0.0",
-    "rubicon-objc==0.4.9",
+    "desktop_notifier>=6.1.0",
+    "rubicon-objc==0.5.0",
     "httpx",
     "rumps",
     "pyyaml",

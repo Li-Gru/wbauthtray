@@ -16,5 +16,6 @@
 
 ```bash
 uv sync
+touch .venv/lib/python3.13/site-packages/rubicon/__init__.py
 uv run python setup.py py2app
 ```
